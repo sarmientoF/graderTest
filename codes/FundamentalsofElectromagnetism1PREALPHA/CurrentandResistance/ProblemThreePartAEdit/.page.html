@@ -1,0 +1,990 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>MATLAB Grader</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link href="//www.mathworks.com/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+	<link href="//www.mathworks.com/includes_content/responsive/css/site6_offcanvas.css" rel="stylesheet" type="text/css">
+	<link href="https://use.typekit.net/xvy5baa.css" rel="stylesheet">
+	<link href="/assets/favicon-c50094a0e6c4a5252144966240bdbce92c8e60d243bff587058e234363f3a019.ico" rel="shortcut icon" />
+
+	<script src="/assets/application-942a24614d94c5a070233496a21bbd1908080446307e49282b6d966d249dbf50.js"></script>
+	<link rel="stylesheet" media="screen" href="/assets/application-5ccf95a0a3d740d780ffb7b58ac0fc9a2fcfbe5ed34164f968f18e8070ed43cc.css" />
+	<!--[if IE 8]>
+	<link rel="stylesheet" media="screen" href="/assets/cody-u_ie8-bb9dd707b52998af337c1f7c8e8bc53a78e51aa62173ff464796bf9e508a50a0.css" />
+	<![endif]-->
+	<!--[if IE 9]>
+	<link rel="stylesheet" media="screen" href="/assets/cody-u_ie9-446d37b3413c957d67232f4ab1379bcd65fbaa9aae09146bb445e738b58d9137.css" />
+	<![endif]-->
+	<script src="//www.mathworks.com/includes_content/responsive/scripts/bootstrap/bootstrap.min.js"></script>
+  <script src="//www.mathworks.com/includes_content/responsive/scripts/bootstrap/responsive-tabs.js"></script>
+	<script src="//www.mathworks.com/includes_content/responsive/scripts/global.js"></script>
+	<script src="//www.mathworks.com/includes_content/responsive/scripts/anchor.js"></script>
+  <script type="text/javascript" src="//assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js"></script>
+
+	<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tVqWf6sj5yVAZplmeQQXvCfoZ3q85iK/RGeLj3LcE3glv7LS8PeZ8ekev4HlTK/TTly7jvb83NwfvZ1gh2fPlQ==" />
+
+
+	
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="LERXA-6VNES-W6PXS-U8C7F-BXSZH",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"LERXA-6VNES-W6PXS-U8C7F-BXSZH",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="qnyh6xixhrieex4rjvoa-f-239aa2ce3-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"31027","ak.ai":parseInt("195948",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"440c0e5","ak.r":36514,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.bpcip":"131.112.127.0","ak.cport":51634,"ak.gh":"23.59.247.222","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1603358044","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==0G+GqujhlZhP4olqSapcbSlUr2VkkJuNpU7vLMxrpszL4wVc5rph8fqv9QGrunFObtcQRtd786wN29I0lJTS6Bi1H8bq7VYwq9l9bExJ5revilpO4EYDYtiWjfdgXG4eNZVGbXbgtsCKznr+KnMs+yajo2FXgILAOn7/vwgF+TidojpkuvipWFvwiNg2cmB1QxqFQFBXE0MrATgXAiRBeOBTkHECLjvZ9G+NS2KKuRundSz0MYNisl2DOmV6ZzdLufYxTbexzdSCGNx1kSvydLTWWDyodXbguD/OmsIFOqDPgiLX1SJx6OBEuTT9bB5vBvA8vIErna4jyYmGmEXOwPuVly3eRWJ/sW3hGSp3iP6YNSIL/efvfZu1opxawt8m//UyZWA/6G+TDzijz4vgGZPlvI+yhaFPxcMkOtNABzE=","ak.pv":"108","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+	<body id="responsive_offcanvas" class="responsive_b_containerless claro">
+		<div class="ccw-header">
+			<div class="sticky_header_container includes_subnav affix-top">
+  <!-- Section Header: Start -->
+  <div class="section_header level_3">
+    <div class="container-fluid">
+      <div class="row" id="mobile_search_row">
+        <div class="col-xs-12 col-md-5 col-md-push-7 hidden-xs hidden-sm" id="mobile_search">
+          <div class="search_nested_content_container">
+            <div id="search_scope_cody" class="collapse in hidden-xs hidden-sm">
+              <ul class="nav navbar-nav navbar-right" id="headernav">
+                <li class="headernav_login dropdown" data-test="global_user_toggle">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">サルミエン ディアス フェルナンド ガブリエル<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="pull-right" data-test="global_user_logout"><a id="logout_topnav" href="https://www.mathworks.com/login/logout?uri=https%3A%2F%2Fgrader.mathworks.com%2Fcourses%2F10011-fundamentals-of-electromagnetism-1-pre-alpha%2Fassignments%2F27958-current-and-resistance%2Fproblems%2F123055-problem-three-part-a%2Fedit">Sign Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-7 col-md-pull-5 has_horizontal_local_nav" id="section_header_title">
+          <div class="section_header_content">
+            <div class="section_header_title add_cursor_pointer">
+              <h1>
+                <a href="/">MATLAB Grader</a>
+              </h1>
+            </div>
+            <button type="button" class="navbar-toggle collapsed subnav visible-xs visible-sm" data-toggle="collapse" data-target=".mobile_subnav_content"> <span class="icon-arrow-down icon_24"></span> </button>
+          </div>
+        </div>
+      </div>
+      <!-- Section Header: End -->
+      <!-- Mobile Local Nav: Start -->
+      <div class="row visible-xs visible-sm" id="mobile_subnav">
+        <div class="col-xs-12">
+          <div class="navbar-collapse collapse mobile_subnav_content">
+            <ul class="nav navbar-nav subnav">
+                <li class="topnav_home " data-test="subnav_mobile_home">
+    <a href="https://grader.mathworks.com/">Courses &amp; Content</a>
+  </li>
+  
+    <li class="topnav_lms_integration" data-test="subnav_lms_integration"><a class="lms_integration_link" href="/lti_credentials">LMS Integration</a></li>
+
+
+  <li class="">
+  <a href="" data-toggle="dropdown" data-target="#" aria-expanded="true">
+    Documentation &amp; Support
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li class=""><a href="https://www.mathworks.com/help/matlabgrader/index.html" target='_blank'>Documentation</a></li>
+    <li class=""><a href="https://www.mathworks.com/videos/matlab-grader-overview-1532608334621.html" target='_blank'>Guided Tour (4-minute video)</a></li>
+    <li class=""><a href="https://www.mathworks.com/learn/teaching-with-matlab.html" target="_blank">Teaching with MATLAB (2-hour, self-paced training)</a></li>
+    <li class=""><a href="https://www.mathworks.com/products/matlab-grader.html" target='_blank'>About MATLAB Grader</a></li>
+    <li class=""><a href="https://www.mathworks.com/help/matlabgrader/ug/matlab-grader-release-notes.html" target='_blank'>Release Notes</a></li>
+    <li class=""><a href="https://www.mathworks.com/support/contact_us.html" target='_blank'>Technical Support</a></li>
+
+  </ul>
+</li>
+
+                <li class="headernav_login_mobile dropdown" data-test="global_user_toggle_mobile">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="mwa-name">サルミエン ディアス フェルナンド ガブリエル</span><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li data-test="global_user_logout_mobile"><a id="logout_topnav" href="https://www.mathworks.com/login/logout?uri=https%3A%2F%2Fgrader.mathworks.com%2Fcourses%2F10011-fundamentals-of-electromagnetism-1-pre-alpha%2Fassignments%2F27958-current-and-resistance%2Fproblems%2F123055-problem-three-part-a%2Fedit">Sign Out</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Local Nav: End -->
+    </div>
+  </div>
+  <!-- Horo Nav: Start -->
+  <div class="horizontal_nav">
+    <div class="horizontal_nav_container">
+      <div class="offcanvas_actuator active" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle">
+        <button type="button" class="btn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-menu"></span>
+            </button>
+        <span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="0">
+          CONTENTS
+        </span>
+        <span class="offcanvas_actuator_close" tabindex="0">
+          Close
+        </span>
+      </div>
+      <div class="offcanvas_horizontal_nav">
+        <div class="container-fluid  hidden-xs hidden-sm">
+          <div class="row">
+            <div class="col-md-12 ">
+              <nav class="navbar navbar-default" role="navigation" id="subnav">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li class="topnav_home " data-test="subnav_mobile_home">
+    <a href="https://grader.mathworks.com/">Courses &amp; Content</a>
+  </li>
+  
+    <li class="topnav_lms_integration" data-test="subnav_lms_integration"><a class="lms_integration_link" href="/lti_credentials">LMS Integration</a></li>
+
+
+  <li class="">
+  <a href="" data-toggle="dropdown" data-target="#" aria-expanded="true">
+    Documentation &amp; Support
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li class=""><a href="https://www.mathworks.com/help/matlabgrader/index.html" target='_blank'>Documentation</a></li>
+    <li class=""><a href="https://www.mathworks.com/videos/matlab-grader-overview-1532608334621.html" target='_blank'>Guided Tour (4-minute video)</a></li>
+    <li class=""><a href="https://www.mathworks.com/learn/teaching-with-matlab.html" target="_blank">Teaching with MATLAB (2-hour, self-paced training)</a></li>
+    <li class=""><a href="https://www.mathworks.com/products/matlab-grader.html" target='_blank'>About MATLAB Grader</a></li>
+    <li class=""><a href="https://www.mathworks.com/help/matlabgrader/ug/matlab-grader-release-notes.html" target='_blank'>Release Notes</a></li>
+    <li class=""><a href="https://www.mathworks.com/support/contact_us.html" target='_blank'>Technical Support</a></li>
+
+  </ul>
+</li>
+
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" tabindex="-1" role="dialog" id="lti_forbidden_modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close add_margin_10" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title add_margin_0" id="standards_doc_modal_01_label">LMS Integration</h4>
+              <span class="clearfix"></span>
+          </div>
+          <div class="modal-body add_padding_20" id="lms_forbidden_message">
+              Your institution is not yet authorized to integrate MATLAB Grader with a Learning Management System. <a href='https://www.mathworks.com/company/aboutus/contact_us/contact_sales.html' target='_blank'> Contact your MathWorks Representative</a> to indicate your interest for an institution-wide authorization.
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script>
+      $('#lti_forbidden_modal').appendTo(document.body);
+
+      function showForbiddenMessageHandler(target, is_premium_user, is_licensed_expired) {
+          $( document ).ready(function() {
+            target.click(function(e) {
+              if(!is_premium_user) {
+                  e.preventDefault();
+                  $('#lti_forbidden_modal').modal('show');
+              } else if(is_licensed_expired){
+                  $('#lms_forbidden_message').html("Your institution's authorization to integrate MATLAB Grader with a Learning Management System has expired. To renew authorization, <a href='https://www.mathworks.com/company/aboutus/contact_us/contact_sales.html' target='_blank'> contact your MathWorks Representative</a>.");
+                   e.preventDefault();
+                   $('#lti_forbidden_modal').modal('show');
+              }
+            })
+          })
+
+
+      }
+  </script>
+  <script>
+      showForbiddenMessageHandler($('.lms_integration_link'), false, )
+  </script>
+  <!-- Horo Nav: End -->
+</div>
+
+		</div>
+		<div class="row-offcanvas row-offcanvas-left active">
+			<div class="sidebar-offcanvas" id="sidebar" role="navigation">
+        <nav class="offcanvas_nav" role="navigation">
+					<div class="codyu_leftnav" id="course_leftnav">
+  <div class="codyu_leftnav_content">
+    <div id="pagefacets">
+      <div class="search_refine">
+        <!-- $FLAG new_toc -->
+        <ul class="grader_toc">
+          <li class="toc_collection toc_is_not_draggable"> <!-- has both for debugging, should add boolean -->
+            <a class="course_details guided_tour_collection_title toc_collection_title" id="leftnav_overview_course_10011" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha">Fundamentals of Electromagnetism 1 / 電磁気学基礎１ (PRE-ALPHA)</a>
+            <ul class="toc_manage">
+              <li>
+                <a href="#" class="toc_manage_reorder">
+                  <img src="https://www.mathworks.com/images/responsive/supporting/online-learning/icon_reorder.png" class="toc_icon_reorder" alt="Reorder Handle Icon">
+                  <span class="js_reorder_label reorder_content">Reorder Content</span>
+                  <span class="js_reorder_label hide_reorder" style="display: none;">Hide Reorder</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="toc_collection_children droppable">
+              <input type="hidden" name="course_id" id="course_id" value="10011" />
+              <li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27952" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27952" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27952" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27952" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27952-introduction-and-matlab-tutorial">Introduction and MatLab Tutorial</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27952" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27952"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27952" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27952-introduction-and-matlab-tutorial/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27952').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27952-introduction-and-matlab-tutorial/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27952").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27952").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27953" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27953" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27953" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27953" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27953-mechanics-review">Mechanics Review</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27953" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27953"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27953" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27953-mechanics-review/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27953').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27953-mechanics-review/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27953").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27953").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27954" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27954" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27954" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27954" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27954-electric-charges-and-fields">Electric Charges and Fields</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27954" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27954"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27954" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27954-electric-charges-and-fields/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27954').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27954-electric-charges-and-fields/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27954").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27954").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27955" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27955" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27955" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27955" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27955-gauss-s-law">Gauss&#39;s Law</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27955" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27955"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27955" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27955-gauss-s-law/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27955').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27955-gauss-s-law/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27955").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27955").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27956" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27956" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27956" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27956" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27956-electric-potential">Electric Potential</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27956" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27956"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27956" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27956-electric-potential/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27956').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27956-electric-potential/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27956").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27956").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27957" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27957" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27957" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27957" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27957-capacitance">Capacitance</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27957" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27957"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27957" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27957-capacitance/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27957').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27957-capacitance/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27957").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27957").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27958" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27958" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27958" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27958" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance">Current and Resistance</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27958" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27958"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27958" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27958').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27958").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27958").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+<li class="js-assignment-leftnav droppable_assignment" id="leftnav_assignment_assignment_27959" draggable="false" data-url="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/sort" data-item="assignment" ondragstart="jQuery.fn.dragStart(event)" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" ondragend="jQuery.fn.dragEnd(event)">
+  <div class="heading expand_collapse toc_group_container">
+    <input type="hidden" name="assignment_id" id="assignment_id" value="27959" />
+    <div data-toggle="collapse" data-target="#leftnav_problems_assignment_27959" class="assignment expand_trigger collapsed" aria-expanded="false">
+      <span class="icon_16 icon-arrow-open-down"></span>
+      <span class="icon_16 icon-arrow-open-right"></span>
+      <a draggable="false" class="js-assignment-title toc_group_title" id="leftnav_assignment_27959" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27959-direct-current-circuits">Direct-Current Circuits</a>
+    </div>
+    <div class="collapse problems_list" id="leftnav_problems_assignment_27959" aria-expanded="false">
+      <ul class="sortable problems toc_group_children">
+        <div id='problems_list'></div>
+        <div class='add_loading_indicator hide' id="loading_indicator_for_27959"></div>
+          <li class="leftnav_add problem" draggable='false' onmousedown="return false;" ondragover="jQuery.fn.dragOverProblem(event)">
+            <a class="toc_add_item" draggable="false" id="new_problem_link_assignment_27959" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27959-direct-current-circuits/problems/new">ADD PROBLEM</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+<script>
+  $('#leftnav_problems_assignment_27959').on('shown.bs.collapse', function () {
+    var shouldExpand = true
+    if(shouldExpand) {
+      sendAjax({
+        url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27959-direct-current-circuits/outline_problems",
+        beforeSend: function() {
+          $("#loading_indicator_for_27959").show();
+        },
+        complete: function() {
+          $("#loading_indicator_for_27959").hide();
+          setActiveItem();
+        }
+      });
+    }
+  });
+</script>
+
+                <li class="leftnav_add" ondragover="jQuery.fn.dragOverAssignment(event)" ondragenter="jQuery.fn.dragEnterAssignment(event)" ondrop="jQuery.fn.drop(event)" draggable='false'>
+                  <a draggable="false" id="new_assignment_link" class="new_element toc_add_item" data-method="get" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/new">Add Assignment</a>
+                </li>
+            </ul>
+              <ul class="toc_manage">
+                <li>
+                  <a class="toc_manage_people" id="manage_users_course_10011" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/people">Manage People</a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+        <!-- $FLAG end new_toc -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+//CW is a global namespace object for Coursework defined in public/javascripts/application.js
+  $(document).ready( function () {
+    setActiveItem();
+    reorderToc();
+
+    // // Disable toggling when clicked on any link under assignment section, including assignment link.
+    $('.js-assignment-leftnav').find('a,ul').on('click', function(e) {
+      e.stopPropagation();
+      return true;
+    });
+
+    var topId = 'top_scroll_page',
+    bottomId = 'bottom_scroll_page';
+
+    var top_el = $('#'+topId);
+    if (!top_el.length) {
+      top_el = $('<div id="top_scroll_page">&nbsp;</div>').appendTo('div.codyu_leftnav');
+    }
+
+    var bottom_el = $('#'+bottomId);
+    if (!bottom_el.length) {
+      bottom_el = $('<div id="bottom_scroll_page">&nbsp;</div>').appendTo('div.codyu_leftnav');
+    }
+
+    var both_el = $('#top_scroll_page, #bottom_scroll_page');
+    both_el.hide();
+    both_el.css({
+      position:'fixed', left: 0, right: 0,
+      height: 20, zIndex: 999999
+    });
+    top_el.css({top:40});
+    bottom_el.css({bottom:0});
+
+    both_el.on('dragover', function(e) {
+      var scrollTop = $('div.codyu_leftnav').scrollTop();
+      var direction = ($(this).attr('id')==topId)?-1:1;
+      var newScrollTop = scrollTop+direction*50;
+      $('div.codyu_leftnav').scrollTop(newScrollTop);
+      return true;
+    });
+
+    var _hide = function(e) {
+      both_el.hide();
+      return true;
+    };
+
+    $(".codyu_leftnav_content").on('dragstart', function(e) {
+      both_el.show();
+      return true;
+    });
+
+    $("div.codyu_leftnav").on('dragend', _hide);
+    both_el.on('mouseover', _hide);
+  });
+</script>
+
+				</nav>
+			</div>
+			<div class="content_container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="alert_messages">
+  
+<script type="text/javascript">
+$(document).ready(function(){
+  var header_height = $('.header').height(),
+      dialog_title_height = $('.dialog_title').height(),
+      dialog_margin_top = parseFloat(dialog_title_height) + parseFloat(15);
+
+  $('.alert_message_container').css('position', 'relative');
+
+  // Sets message top location for internal app pages
+  if ( !$('.header.login_home').is(':visible') ){
+    if ( $('.alert_message_container').length ) { $('.dialog_title').css('margin-bottom','30px'); }
+  }
+
+  $("[data-hide]").on("click", function(){
+    $(".alert_message_container").remove();
+    $('.dialog_title').animate({ 'margin-bottom':'0px'});
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+  $('.alert_message_container').delay(30000).fadeOut('slow').queue(function() {
+    $(".alert_message_container").remove();
+    $('.dialog_title').animate({
+    	'margin-bottom':'0px',
+    }, 500, function(){
+    	$( this ).removeAttr( 'style' );
+    });
+  });
+</script>
+
+</div>
+
+							<div class="row">
+								<div class="content col-xs-12 ">
+									<script>
+  var dojoConfig = {
+    isDebug: false,
+    async: true,
+    cacheBust: true,
+    parseOnLoad: false,
+    has: {
+      "production": 1
+    },
+    map : {
+      "*" : {
+        "mw-menu" : "mw-form",
+        "mw-mixins" : "mw-form/mixins"
+      }
+    },
+    locale: "en-us"
+  };
+</script>
+
+<script src="https://learningtool-ui.mathworks.com/web/2.27.2/dojo/dojo.js"></script>
+<link rel="stylesheet" media="screen" href="https://learningtool-ui.mathworks.com/web/2.27.2/css-lti/motw_components.css" />
+<link rel="stylesheet" media="screen" href="https://learningtool-ui.mathworks.com/web/2.27.2/dijit/themes/claro/claro.css" />
+<link rel="stylesheet" media="screen" href="https://learningtool-ui.mathworks.com/web/2.27.2/css-lti/application.css" />
+<link rel="stylesheet" media="screen" href="https://learningtool-ui.mathworks.com/web/2.27.2/css-lti/responsive.css" />
+
+
+<div class="dialog_title">
+  <p class="add_margin_0 breadcrumb">
+  <a id="course_10011" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha">Fundamentals of Electromagnetism 1 / 電磁気学基礎１ (PRE-ALPHA)</a>
+    <span class='icon_16 icon-arrow-open-right'></span>
+    <a data-assignment-id="27958" id="assignment_27958" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance">Current and Resistance</a>
+  <span class='icon_16 icon-arrow-open-right'></span>
+</p>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <h2 id="problem_header_title" class="add_margin_0">
+        <span id='problem_title' class='add_font_arial'>
+          <a id="assignment_27958_problem_123055" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a">Problem Three - Part A</a>
+        </span>
+        <span class="problem_published_status">
+          (DRAFT)
+        </span>
+      </h2>
+    </div>
+    <div class="col-xs-12 col-sm-4 action_links">
+      <ul class="list-inline pull-right pull_left_xs add_padding_top_10 add_margin_5">
+          <li class="edit hide">
+            <a class="" id="edit_problem_123055" title="Edit" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a/edit">Edit</a>
+          </li>
+          <li>
+            <div class="dropdown " id="action_links_dropdown">
+              <a class="dropdown-toggle" id="actions_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Actions
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown_menu_left_xs" aria-labelledby="actions_dropdown">
+                <li class="copy ">
+                  <a class="" data-remote="true" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a/copy">Copy</a>
+                </li>
+                <li class="rescore hide">
+                  <a id="rescore_all_solutions" class="" data-toggle="modal" data-target="#rescore_all_solutions_dialog" href="#">Rescore Solutions</a>
+                </li>
+                <li class="delete ">
+                  <a class="" data-toggle="modal" data-target="#confirm_delete_problem_dialog" href="#">Delete</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div id='copy_popup_confirmation'></div>
+    <div class="description_header row draft_problem">
+      <div class="problem_progress_visualization">
+        <div id="problem_status_visualization_123055">
+          
+        </div>
+      </div>
+    </div>
+  <hr class='add_hr_spacing_5 add_margin_20'></hr>
+</div>
+
+<div class="modal fade" id='copy_problem_confirmation' tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3>
+          Problem Copied
+        </h3>
+      </div>
+      <div class="modal-body">
+        <h3 class="icon m_success">
+          <span></span>
+        </h3>
+      </div>
+      <div class="modal-footer">
+        <div class="submit">
+          <ul class="list-inline pull-right">
+            <li>
+              <a title="View Problem" class="btn btn_color_blue" href="#">View Problem</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirm_delete_problem_dialog" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3>Delete Problem: 
+          <span id="delete_problem_title">Problem Three - Part A</span>
+        </h3>
+      </div>
+      <div class="modal-body">
+        <h3>
+          <span class="icon m_warning"></span>
+          Are you sure you want to delete this problem?
+        </h3>
+      </div>
+      <div class="modal-footer">
+        <div class="submit">
+          <ul class="list-inline pull-right">
+            <li><a class="cancel btn companion_btn btn_color_blue" rel="nofollow" data-dismiss="modal" href="#">Cancel</a></li>
+            <li><a class="submit_button btn btn_color_blue" id="delete_problem_confirmation_button" disable_with="Deleting..." rel="nofollow" title="Delete" data-method="delete" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a">Delete</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="rescore_all_solutions_dialog" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3>Rescore all Solutions</h3>
+      </div>
+      <div class="modal-body">
+        This option rescores all submitted solutions for this problem. If a learner has submitted multiple solutions, each solution is rescored.</br></br><b>Important:</b> This operation may take hours, depending on the number of submissions.
+      </div>
+      <div class="modal-footer">
+        <div class="submit">
+          <ul class="list-inline pull-right">
+            <li><a class="cancel btn companion_btn btn_color_blue" id="cancel_rescore_all" rel="nofollow" data-dismiss="modal" href="#">Cancel</a></li>
+            <li>
+              <a class="rescore_all submit_button btn btn_color_blue" disable_with="Rescoring..." id="#rescore_all_button" rel="nofollow" data-method="post" href="/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a/rescore_all_solutions">Rescore</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="dialog">
+  <div class="dialog_content transactional">
+    <script type='text/javascript'>
+  require(['instructor/AuthoringApp', 'dojo/dom', 'dojo/on', 'dojo/_base/lang', 'dojo/topic', 'dojo/dom-class', 'dojo/aspect'], function(AuthoringApp, dom, on, lang, topic, domClass, aspect){
+    var authoringApp = new AuthoringApp({"session":{"apiVersion":"","sessionId":""},"problem":{"apiVersion":"2.0","title":"Problem Three - Part A","description":{"opcPackage":"{\"parts\":[{\"partUri\":\"/matlab/document.xml\",\"contentType\":\"application/vnd.mathworks.matlab.code.document+xml\",\"content\":\"\u003c?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?\u003e\u003cw:document xmlns:w=\\\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\\\"\u003e\u003cw:body\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"text\\\"/\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003e A 20.00-V battery is used to supply current to a 10-kilo-Ohm resistor. Assume the voltage drop across any wires used for connections is negligible. (a) What is the current through the resistor? (b) What is the power dissipated by the resistor? (c) What is the power input from the battery, assuming all the electrical power is dissipated by the resistor? \u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"text\\\"/\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:rPr\u003e\u003cw:b/\u003e\u003c/w:rPr\u003e\u003cw:t\u003eMATLAB DETAILS:\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"ListParagraph\\\"/\u003e\u003cw:numPr\u003e\u003cw:numId w:val=\\\"1\\\"/\u003e\u003c/w:numPr\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003eYour solution must be formatted as a \u003c/w:t\u003e\u003c/w:r\u003e\u003cw:hyperlink w:docLocation=\\\"https://www.mathworks.com/videos/managing-code-in-matlab-scripts-97216.html\\\"\u003e\u003cw:r\u003e\u003cw:t\u003eSCRIPT\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:hyperlink\u003e\u003cw:r\u003e\u003cw:t\u003e.\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"ListParagraph\\\"/\u003e\u003cw:numPr\u003e\u003cw:numId w:val=\\\"1\\\"/\u003e\u003c/w:numPr\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003eUse the following variable names in your script (BEWARE! CASE SENSITIVE!) - \u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:rPr\u003e\u003cw:b/\u003e\u003c/w:rPr\u003e\u003cw:t\u003eI\u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:t\u003e for the current through the resistor; \u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:rPr\u003e\u003cw:b/\u003e\u003c/w:rPr\u003e\u003cw:t\u003eP_R\u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:t\u003e for the power dissipated by the resistor; and \u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:rPr\u003e\u003cw:b/\u003e\u003c/w:rPr\u003e\u003cw:t\u003eP_B\u003c/w:t\u003e\u003c/w:r\u003e\u003cw:r\u003e\u003cw:t\u003e for the power input from the battery.\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003c/w:body\u003e\u003c/w:document\u003e\",\"relationship\":null}],\"relationships\":[{\"relationshipType\":\"http://schemas.mathworks.com/matlab/code/2013/relationships/document\",\"target\":\"/matlab/document.xml\",\"relationshipId\":\"rId1\"}]}","html":"\u003cdiv style = \"text-align: start; line-height: 20.44px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, monospace; font-style: normal; font-size: 14px; font-weight: 400; text-decoration: none solid rgb(0, 0, 0); white-space: normal; \"\u003e\u003cdiv style=\"display: block; min-width: 0px; padding-top: 0px; perspective-origin: 693px 60.8333px; transform-origin: 693px 60.8333px; \"\u003e\u003cdiv style=\"font-family: Helvetica, Arial, sans-serif; line-height: 21px; margin-bottom: 9px; margin-left: 4px; margin-right: 10px; margin-top: 2px; text-align: left; white-space: pre-wrap; perspective-origin: 670px 20.8889px; transform-origin: 670px 20.8889px; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px; \"\u003e\u003cspan style=\"display: inline; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e A 20.00-V battery is used to supply current to a 10-kilo-Ohm resistor. Assume the voltage drop across any wires used for connections is negligible. (a) What is the current through the resistor? (b) What is the power dissipated by the resistor? (c) What is the power input from the battery, assuming all the electrical power is dissipated by the resistor? \u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003cdiv style=\"font-family: Helvetica, Arial, sans-serif; line-height: 21px; margin-bottom: 9px; margin-left: 4px; margin-right: 10px; margin-top: 2px; text-align: left; white-space: pre-wrap; perspective-origin: 670px 10.4444px; transform-origin: 670px 10.4444px; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px; \"\u003e\u003cspan style=\"display: inline; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"font-weight: 700; \"\u003eMATLAB DETAILS:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003cul style=\"font-family: Helvetica, Arial, sans-serif; list-style-type: square; margin-bottom: 20px; margin-top: 10px; perspective-origin: 677px 20px; transform-origin: 677px 20px; margin-top: 10px; margin-bottom: 20px; \"\u003e\u003cli style=\"display: list-item; margin-bottom: 0px; margin-left: 56px; margin-top: 0px; text-align: left; white-space: pre-wrap; perspective-origin: 649px 10px; transform-origin: 649px 10px; margin-left: 56px; \"\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003eYour solution must be formatted as a \u003c/span\u003e\u003c/span\u003e\u003ca target='_blank' href = \"https://www.mathworks.com/videos/managing-code-in-matlab-scripts-97216.html\"\u003e\u003cspan style=\"\"\u003e\u003cspan style=\"\"\u003eSCRIPT\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e.\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli style=\"display: list-item; margin-bottom: 0px; margin-left: 56px; margin-top: 0px; text-align: left; white-space: pre-wrap; perspective-origin: 649px 10px; transform-origin: 649px 10px; margin-left: 56px; \"\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003eUse the following variable names in your script (BEWARE! CASE SENSITIVE!) - \u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"font-weight: 700; \"\u003eI\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e for the current through the resistor; \u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"font-weight: 700; \"\u003eP_R\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e for the power dissipated by the resistor; and \u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"font-weight: 700; \"\u003eP_B\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"display: inline; margin-left: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e for the power input from the battery.\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e"},"starterCode":{"code":"%% symbolic variables and constants\nsyms I V R P_R P_B","lockedRows":[]},"referenceSolution":"%% symbolic variables and constants\nsyms I V R P_R P_B\n\nI = V/R;\nP_R = V*I;% from the resistor\nP_B = V*I; % From the battery\n\n% For this circuit R there is no loss of energy because the battery and\n% resistor received the same differece of potential and current\nV = 20; % V\nR = 10e3; % Ohms\n\nI = subs(I);\nP_R = subs(P_R);\nP_B = subs(P_B);\n\n% Display results\nfprintf ( 'the current through the resistor is : %0.3f Amps \\n' , I);\nfprintf ( 'the power dissipated by the resistor is : %0.2f Watts \\n' , P_R);\nfprintf ( 'The power input from the battery is : %0.2f Watts \\n' , P_B);","isPublished":false,"hasDependentFeedback":false,"userFiles":[],"assessments":[{"code":"%assessVariableEqual('I', referenceVariables.I);\n\nisAlways(referenceVariables.I == I)","description":"The current through the resistor","feedbackOnIncorrect":{"opcPackage":"{\"parts\":[{\"partUri\":\"/matlab/document.xml\",\"contentType\":\"application/vnd.mathworks.matlab.code.document+xml\",\"content\":\"\u003c?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?\u003e\u003cw:document xmlns:w=\\\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\\\"\u003e\u003cw:body\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"text\\\"/\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003e\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003c/w:body\u003e\u003c/w:document\u003e\",\"relationship\":null}],\"relationships\":[{\"relationshipType\":\"http://schemas.mathworks.com/matlab/code/2013/relationships/document\",\"target\":\"/matlab/document.xml\",\"relationshipId\":\"rId1\"}]}","html":"\u003cdiv style = \"text-align: start; line-height: normal; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, monospace; font-style: normal; font-size: 14px; font-weight: 400; text-decoration: none solid rgb(0, 0, 0); white-space: normal; \"\u003e\u003cdiv style=\"display: block; min-width: 0px; padding-top: 0px; perspective-origin: 682px 10.4444px; transform-origin: 682px 10.4444px; \"\u003e\u003cdiv style=\"font-family: Helvetica, Arial, sans-serif; line-height: 21px; margin-bottom: 9px; margin-left: 4px; margin-right: 10px; margin-top: 2px; text-align: left; white-space: pre-wrap; perspective-origin: 659px 10.4444px; transform-origin: 659px 10.4444px; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px; \"\u003e\u003cspan style=\"display: inline; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"},"isVisible":false,"weight":1,"weightInPercent":34,"type":"matlabCode"},{"code":"%assessVariableEqual('P_R', referenceVariables.P_R);\n\nisAlways(referenceVariables.P_R == P_R)","description":"The power dissipated by the resistor","feedbackOnIncorrect":{"opcPackage":"{\"parts\":[{\"partUri\":\"/matlab/document.xml\",\"contentType\":\"application/vnd.mathworks.matlab.code.document+xml\",\"content\":\"\u003c?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?\u003e\u003cw:document xmlns:w=\\\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\\\"\u003e\u003cw:body\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"text\\\"/\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003e\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003c/w:body\u003e\u003c/w:document\u003e\",\"relationship\":null}],\"relationships\":[{\"relationshipType\":\"http://schemas.mathworks.com/matlab/code/2013/relationships/document\",\"target\":\"/matlab/document.xml\",\"relationshipId\":\"rId1\"}]}","html":"\u003cdiv style = \"text-align: start; line-height: normal; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, monospace; font-style: normal; font-size: 14px; font-weight: 400; text-decoration: none solid rgb(0, 0, 0); white-space: normal; \"\u003e\u003cdiv style=\"display: block; min-width: 0px; padding-top: 0px; perspective-origin: 682px 10.4444px; transform-origin: 682px 10.4444px; \"\u003e\u003cdiv style=\"font-family: Helvetica, Arial, sans-serif; line-height: 21px; margin-bottom: 9px; margin-left: 4px; margin-right: 10px; margin-top: 2px; text-align: left; white-space: pre-wrap; perspective-origin: 659px 10.4444px; transform-origin: 659px 10.4444px; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px; \"\u003e\u003cspan style=\"display: inline; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"},"isVisible":false,"weight":1,"weightInPercent":33,"type":"matlabCode"},{"code":"%assessVariableEqual('P_B', referenceVariables.P_B);\n\nisAlways(referenceVariables.P_B == P_B)","description":"The power input from the battery","feedbackOnIncorrect":{"opcPackage":"{\"parts\":[{\"partUri\":\"/matlab/document.xml\",\"contentType\":\"application/vnd.mathworks.matlab.code.document+xml\",\"content\":\"\u003c?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?\u003e\u003cw:document xmlns:w=\\\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\\\"\u003e\u003cw:body\u003e\u003cw:p\u003e\u003cw:pPr\u003e\u003cw:pStyle w:val=\\\"text\\\"/\u003e\u003cw:jc w:val=\\\"left\\\"/\u003e\u003c/w:pPr\u003e\u003cw:r\u003e\u003cw:t\u003e\u003c/w:t\u003e\u003c/w:r\u003e\u003c/w:p\u003e\u003c/w:body\u003e\u003c/w:document\u003e\",\"relationship\":null}],\"relationships\":[{\"relationshipType\":\"http://schemas.mathworks.com/matlab/code/2013/relationships/document\",\"target\":\"/matlab/document.xml\",\"relationshipId\":\"rId1\"}]}","html":"\u003cdiv style = \"text-align: start; line-height: normal; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, monospace; font-style: normal; font-size: 14px; font-weight: 400; text-decoration: none solid rgb(0, 0, 0); white-space: normal; \"\u003e\u003cdiv style=\"display: block; min-width: 0px; padding-top: 0px; perspective-origin: 682px 10.4444px; transform-origin: 682px 10.4444px; \"\u003e\u003cdiv style=\"font-family: Helvetica, Arial, sans-serif; line-height: 21px; margin-bottom: 9px; margin-left: 4px; margin-right: 10px; margin-top: 2px; text-align: left; white-space: pre-wrap; perspective-origin: 659px 10.4444px; transform-origin: 659px 10.4444px; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px; \"\u003e\u003cspan style=\"display: inline; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; perspective-origin: 0px 0px; transform-origin: 0px 0px; \"\u003e\u003cspan style=\"\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"},"isVisible":false,"weight":1,"weightInPercent":33,"type":"matlabCode"}],"numAssessments":null,"problemType":"script","runTemplate":{"code":""},"assessmentMethod":"pass_fail","isResultScoreVisible":false},"submission":{"solution":{"code":"","lockedRows":[]},"runTemplate":{"code":""},"submitResponse":null},"problemMetadata":{"problemId":123055,"lcmsDocumentId":"4064518d-caba-49c1-a0bb-3dd366578f12","contentSource":"mwa"},"features":{"apiVersion":"","functions":true,"getProblemEndpoint":false,"getLatestSubmissionEndpoint":false,"fileUpload":true,"learnerSave":false,"visibleTests":true,"problemChooser":true,"publicCatalog":false,"testDependency":true,"partialGrading":true,"lrs":false,"function_assessment_type":true},"userData":{"apiVersion":"","role":"instructor","userId":13322701,"userType":"mwa","hasPublicCatalogAccess":false},"serverData":{"endpoints":{"messageServiceEndpoint":"/services/json","getGetCatalogProblemsEndpoint":"/catalog/grouped_problems","getCatalogGroupsEndpoint":"/catalog/groups","analyticsBaseEndpoint":"https://learninganalytics.mathworks.com"}},"contentMetadata":{"contentId":123055,"contentTypeName":"problem"},"contentCollection":{"contentCollectionId":null,"contentCollectionType":"assignment"}});
+    domClass.remove(dom.byId('lt_container'), 'hide-div');
+    authoringApp.placeWidget(dom.byId('lt_container'));
+
+    resizeRteImages('#lt_container img');
+
+    $('#delete_problem_confirmation_button').click(function(){
+      if(authoringApp.instructorView) {
+        authoringApp.instructorView.destroy();
+      }
+    });
+
+    topic.subscribe("problemDescriptionPlaced", lang.hitch(this, function(){
+      resizeRteImages('#lt_container img');
+    }));
+
+    topic.subscribe("rtcDocumentChanged", lang.hitch(this, function(){
+      resizeRteImages('#lt_container img');
+    }));
+
+    topic.subscribe("assessmentResultsViewChanged", lang.hitch(this, function(){
+      resizeRteImages('#lt_container img');
+    }));
+
+    var matlabCodeInitializerListener = topic.subscribe("matlabCodeAssessmentEditorInitialized", lang.hitch(this, function(){
+        var problemService = authoringApp.instructorService.problemService;
+        if (problemService.apiVersion == '1.0') {
+          var migrationService = authoringApp.instructorView.initializeCourseworkMigrationService();
+          if (migrationService.isProblemCompatible()) {
+            problemService.set('apiVersion', '2.0');
+            var problemParams = problemService.getProblem();
+            $.ajax({
+              type: "PUT",
+              dataType: 'json',
+              contentType: 'application/json',
+              url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/problems/123055-problem-three-part-a",
+              data: JSON.stringify({problem: problemParams, upgradeProblem: true})
+            });
+          }
+          authoringApp.instructorView.showCourseworkUpgradeMessage();
+          matlabCodeInitializerListener.remove();
+        }
+    }));
+
+    on(authoringApp.instructorView.saveProblemService, 'onSaveSuccessful', lang.hitch(this, function(){
+      title = authoringApp.instructorView.problemService.title;
+      problem_url = '';
+      if (authoringApp.instructorView.serverDataManager.endpoints != undefined) {
+        problem_url = authoringApp.instructorView.serverDataManager.endpoints.showProblemEndpoint;
+      }
+      published = authoringApp.instructorView.problemService.isPublished;
+
+      afterSaveOrCopyProblem(title, problem_url, published);
+    }));
+
+    on(authoringApp.instructorView.saveProblemService, 'onSuccessfulImport', lang.hitch(this, function(){
+      title = authoringApp.instructorView.problemService.title;
+      if(title == undefined || title == '') {
+        title = "Untitled Problem";
+      }
+      problem_url = '';
+      if (authoringApp.instructorView.serverDataManager.endpoints != undefined) {
+        problem_url = authoringApp.instructorView.serverDataManager.endpoints.showProblemEndpoint;
+      }
+      published = authoringApp.instructorView.problemService.isPublished;
+
+      afterSaveOrCopyProblem(title, problem_url, published);
+    }));
+  });
+
+  function afterSaveOrCopyProblem(title, problem_url, published) {
+    if(problem_url !== undefined) {
+      updateLeftNav();
+      var problem_id = problem_url.split('/problems')[1].split('/')[1];
+      $('h2#problem_header_title span#problem_title').html("<a href="+problem_url+">"+title+"</a>");
+      $('div#confirm_delete_problem_dialog .submit_button').attr('href', problem_url);
+      $('div#action_links_dropdown').removeClass('hide');
+      $('#delete_problem_title').text(title);
+      $('div.action_links li.delete').removeClass('hide');
+        $('div.action_links li.copy a').attr('href', problem_url.concat('/copy'));
+        $('div#copy_problem_dialog .copy_problem_popup').attr('data-problem-id', problem_id);
+        $('div.action_links li.copy').removeClass('hide');
+    } else {
+      $('h2#problem_header_title span#problem_title').text(title);
+    }
+
+    if(published == false) {
+      $('h2#problem_header_title span.problem_published_status').text('(DRAFT)');
+    } else {
+      $('h2#problem_header_title span.problem_published_status').empty();
+    }
+
+    if($('#copy_popup_for_problem .form-group select#course').length) {
+      var course_id = $('#copy_popup_for_problem .form-group select#course')[0].dataset.courseId;
+      if (course_id !== undefined && problem_url !== undefined) {
+        $('div#copy_problem_dialog .copy_problem_popup').attr('data-problem-id', problem_url.split('/problems')[1].split('/')[1]);
+        updateListOfAssignments();
+        $('div.action_links li.copy').removeClass('hide');
+      }
+    }
+
+    $("#alert_messages").replaceWith("<div id=\"alert_messages\">\n      <div class=\"alert_message_container success\">\n      <span class=\"icon close\" data-hide=\"success\">×<\/span>\n      <div class=\"alert_message\">\n        <p class=\"icon m_success\">Draft saved<\/p>\n      <\/div>\n    <\/div>\n\n<script type=\"text/javascript\">\n\$(document).ready(function(){\n  var header_height = \$(\'.header\').height(),\n      dialog_title_height = \$(\'.dialog_title\').height(),\n      dialog_margin_top = parseFloat(dialog_title_height) + parseFloat(15);\n\n  \$(\'.alert_message_container\').css(\'position\', \'relative\');\n\n  // Sets message top location for internal app pages\n  if ( !\$(\'.header.login_home\').is(\':visible\') ){\n    if ( \$(\'.alert_message_container\').length ) { \$(\'.dialog_title\').css(\'margin-bottom\',\'30px\'); }\n  }\n\n  \$(\"[data-hide]\").on(\"click\", function(){\n    \$(\".alert_message_container\").remove();\n    \$(\'.dialog_title\').animate({ \'margin-bottom\':\'0px\'});\n  });\n});\n<\/script>\n\n\n<script type=\"text/javascript\">\n  \$(\'.alert_message_container\').delay(30000).fadeOut(\'slow\').queue(function() {\n    \$(\".alert_message_container\").remove();\n    \$(\'.dialog_title\').animate({\n    	\'margin-bottom\':\'0px\',\n    }, 500, function(){\n    	\$( this ).removeAttr( \'style\' );\n    });\n  });\n<\/script>\n\n<\/div>\n");
+  }
+
+  function updateLeftNav() {
+    sendAjax({
+      url: "/courses/10011-fundamentals-of-electromagnetism-1-pre-alpha/assignments/27958-current-and-resistance/outline_problems",
+      beforeSend: function() {
+        $("#loading_indicator_for_27958").show();
+      },
+      complete: function() {
+        $("#loading_indicator_for_27958").hide();
+        $("#leftnav_problems_assignment_27958 #problems_list li:last").addClass('active');
+      }
+    });
+  }
+</script>
+
+  </div>
+</div>
+
+									<div id='lt_container' class='hide-div'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="footer" class="bs-footer">
+  <div class="container-fluid">
+    <div class="footer" translate="no">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="clearfix"></div>
+          <ul class="footernav">
+            <li class="footernav_patents">
+              <a href="https://www.mathworks.com/company/aboutus/policies_statements/patents.html?s_tid=gf_pat">Patents</a>
+            </li>
+            <li class="footernav_trademarks">
+              <a href="https://www.mathworks.com/company/aboutus/policies_statements/trademarks.html?s_tid=gf_trd">Trademarks</a>
+            </li>
+            <li class="footernav_privacy">
+              <a href="https://www.mathworks.com/company/aboutus/policies_statements.html?s_tid=gf_priv">Privacy Policy</a>
+            </li>
+            <li class="footernav_piracy">
+              <a href="https://www.mathworks.com/company/aboutus/policies_statements/piracy.html?s_tid=gf_pir">Preventing Piracy</a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+          <div class="clearfix"></div>
+          <p class="copyright" translate="no">© 1994-2020 The MathWorks, Inc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+		</div>
+
+		<script type="text/javascript">
+			Application.trigger("tooltip:initialize", '.roster__details [title!=""], .search__filter [title!=""], .solutions_filter [title!=""]');
+		</script>
+
+		<script src="//www.mathworks.com/includes_content/responsive/scripts/offcanvas.js"></script>
+		<!-- END OF FOOTER -->
+		  <!-- BEGIN Adobe DTM -->
+		  <script type="text/javascript">
+			  try {
+			    _satellite.pageBottom();
+			  } catch (e) {
+			    //something went wrong
+			  }
+		  </script>
+		  <!-- END Adobe DTM -->
+	</body>
+</html>
